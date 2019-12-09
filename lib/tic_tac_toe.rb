@@ -62,7 +62,7 @@ class TicTacToe
 
   def won?
     WIN_COMBINATIONS.each{|x|
-      if @board[x[0]] == @board[x[1]] && @board[x[1]] == @board[x[2]]
+      if @board[x[0]] == @board[x[1]] && @board[x[1]] == @board[x[2]] && @board[x[0]] != " "
         return x
       end
     }
@@ -91,7 +91,7 @@ class TicTacToe
   end
 
   def winner
-    self.won? == false ? false : @board[self.won?[0]]
+    self.won? == false ? nil : @board[self.won?[0]]
   end
 
 end

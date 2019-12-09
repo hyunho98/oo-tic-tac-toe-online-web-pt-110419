@@ -91,7 +91,7 @@ class TicTacToe
   end
 
   def winner
-    self.won? == false ? nil : self.won?[0]
+    self.won? == false ? self.won?[0] : nil
   end
 
 end

@@ -53,15 +53,7 @@ class TicTacToe
   end
 
   def turn_count
-    count = 0
-    index = 0
-    while index < 9
-      if self.position_taken?(index) == false
-          count += 1
-      end
-      index += 1
-    end
-    count
+    @board.count{|token| token == "X" || token == "O"}
   end
 
 

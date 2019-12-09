@@ -61,6 +61,7 @@ class TicTacToe
       end
       index += 1
     end
-        
+  end
+
 
 end

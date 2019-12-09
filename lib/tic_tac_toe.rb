@@ -87,7 +87,8 @@ class TicTacToe
     if self.draw? == true || self.won? == true
       return true
     end
+    false
   end
-  
+
 
 end

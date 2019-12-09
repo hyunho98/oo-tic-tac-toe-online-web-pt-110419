@@ -60,4 +60,13 @@ class TicTacToe
     self.turn_count % 2 == 0 ? "X" : "O"
   end
 
+  def won?
+    WIN_COMBINATIONS.each{|x|
+      if @board[x[0]] == @board[x[1]] == @board[x[2]]
+        return true
+      end
+    }
+    false
+  end
+
 end

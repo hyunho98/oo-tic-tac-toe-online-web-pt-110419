@@ -95,6 +95,7 @@ class TicTacToe
   end
 
   def play
+    self.display_board
     until self.over? || self.draw? || self.won? do
       self.turn
     end

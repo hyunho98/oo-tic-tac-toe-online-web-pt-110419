@@ -49,5 +49,8 @@ class TicTacToe
       self.display_board
     else
       self.turn
+    end
+  end
+  
 
 end

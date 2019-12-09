@@ -95,7 +95,7 @@ class TicTacToe
   end
 
   def play
-    until self.over? do
+    until self.over? || self.draw? || self.won? do
       self.turn
     end
     if self.won?

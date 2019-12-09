@@ -40,4 +40,14 @@ class TicTacToe
   def valid_move?(index)
     self.position_taken?(index) == false && index > -1 && index < 10 ? true : false
   end
+
+  def turn
+    input = gets.chomp
+    index = self.input_to_index(input)
+    if self.valid_move?(index)
+      self.move(index, current_player)
+      self.display_board
+    else
+      self.turn
+
 end
